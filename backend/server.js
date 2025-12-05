@@ -50,6 +50,9 @@ const authLimiter = rateLimit({
   skipSuccessfulRequests: true,
 });
 
+// Trust proxy - required for rate limiting behind Nginx
+app.set('trust proxy', true);
+
 // Apply rate limiting
 app.use('/api/', limiter);
 app.use('/api/auth/login', authLimiter);
