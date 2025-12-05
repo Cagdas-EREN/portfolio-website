@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { projectsAPI } from '../services/api'
 import { HiCode, HiX } from 'react-icons/hi'
 
-const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://localhost:5000'
+const BASE_URL = import.meta.env.VITE_BASE_URL || ''
 
 export default function Portfolio() {
   const [projects, setProjects] = useState([])

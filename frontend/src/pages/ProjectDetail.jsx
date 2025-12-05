@@ -5,7 +5,7 @@ import { projectsAPI } from '../services/api'
 import { HiArrowLeft, HiExternalLink, HiX } from 'react-icons/hi'
 import { FaGithub } from 'react-icons/fa'
 
-const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://localhost:5000'
+const BASE_URL = import.meta.env.VITE_BASE_URL || ''
 
 export default function ProjectDetail() {
   const { slug } = useParams()
